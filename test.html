@@ -1,0 +1,87 @@
+<head>
+    <link rel="stylesheet" type="text/css" href="css/style-footer.css" />
+  
+    <style>
+      .toggle {
+        background-color: white;
+        padding: 10px 2px;
+        border-radius: 18px;
+        border: 2px solid red;
+        display: inline-block;
+      }
+  
+      .toggle [name="VELOCK"] {
+        display: none;
+      }
+  
+      .toggle input[type="radio"]+label {
+        background-color: white;
+        color: black;
+        padding: 8px 15px;
+        border-radius: 15px;
+        cursor: pointer;
+        user-select: none;
+      }
+  
+      .toggle input[type="radio"]:checked+label {
+        background-color: red;
+        color: white;
+      }
+    </style>
+  </head>
+  
+  <body>
+    <div class="toggle">
+      <input type="radio" id="toggle-vin" name="VELOCK" value="VIN" checked>
+      <label class="radio-button" for="toggle-vin">VIN</label>
+  
+      <input type="radio" id="toggle-plaque"name="VELOCK" value="Plaque">
+      <label class="radio-button" for="toggle-plaque">Plaque d'immatriculation</label>
+    </div>
+  
+    <div id="out"></div>
+
+    <footer class="footer">
+        <div class="footer-topcover">
+          <div class="inner-footercover d-flex align-items-start flex-wrap justify-content-center">
+            <div class="footer-logo">
+              <a href="https://www.esigelec.fr/fr" title="Esigelec" class="th-logocover">
+                <img src="https://www.esigelec.fr/profiles/createur_profil/themes/createur/dist/images/footer-logo.svg" alt="logo" />
+              </a>
+              <div class="footer-systemelogos">
+                <img src="https://www.esigelec.fr/profiles/createur_profil/themes/createur/dist/images/footer-systemelogos.svg" alt="systemelogos" />
+              </div>
+            </div>
+            <div class="footer-add">
+              <p>
+                TechnopÃ´le du Madrillet<br />
+                Avenue GalilÃ©e - BP 10024 76801<br />
+                Saint-Etienne du Rouvray Cedex<br />
+                TÃ©l : (+33) 02 32 91 58 58
+              </p>
+            </div>
+            <div class="footer-btnbox d-flex">
+              <a href="https://www.esigelec.fr/fr/contact" class="th-btn d-flex align-items-center justify-content-center" title="Plan dâ€™accÃ¨s"><span class="btn-cover">Plan dâ€™accÃ¨s</span></a>
+              <a href="https://www.esigelec.fr/fr/contact#contactform" class="th-btn d-flex align-items-center justify-content-center" title="Contact"><span class="btn-cover">Contact</span></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="inner-footercover">
+            <nav class="block block--menu block--pieddepage" role="navigation" aria-labelledby="block-pieddepage-menu">
+              <ul class="footer-linklist d-flex flex-wrap align-items-center justify-content-center">©2022 ESIGELEC</p>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </footer>
+    <script>
+        document.querySelectorAll('input[name="pricing"]').forEach(input =>
+          input.addEventListener("change", function() {
+            document.getElementById('out').innerHTML = `Value: ${this.value}`;
+          })
+        );
+      </script>
+</body>
+  

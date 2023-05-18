@@ -1,0 +1,101 @@
+@keyframes SuggestCorrectMarket_shakeKeyframes__M255n {
+
+    10%,
+    90% {
+        transform: translate3d(-1px, 0, 0)
+    }
+
+    20%,
+    80% {
+        transform: translate3d(2px, 0, 0)
+    }
+
+    30%,
+    50%,
+    70% {
+        transform: translate3d(-4px, 0, 0)
+    }
+
+    40%,
+    60% {
+        transform: translate3d(4px, 0, 0)
+    }
+}
+
+.SuggestCorrectMarket_root__lgPqN {
+    text-align: center;
+    padding: 32px 24px;
+    border-radius: 16px
+}
+
+@media print,
+screen and (min-width: 600px) {
+    .SuggestCorrectMarket_root__lgPqN {
+        padding: 48px
+    }
+}
+
+@media print,
+screen and (min-width: 900px) {
+    .SuggestCorrectMarket_root__lgPqN {
+        padding: 72px
+    }
+}
+
+.SuggestCorrectMarket_wrapper__h438P {
+    max-width: 400px;
+    margin: 0 auto
+}
+
+.SuggestCorrectMarket_flags__0EUqk {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px
+}
+
+.SuggestCorrectMarket_flag__xJuCU {
+    box-shadow: 0 0 0 2px #fff
+}
+
+.SuggestCorrectMarket_flag__xJuCU.SuggestCorrectMarket_first__xCFhC {
+    transform: translateX(20%)
+}
+
+.SuggestCorrectMarket_flag__xJuCU.SuggestCorrectMarket_second__yTTDl {
+    transform: translateX(-20%)
+}
+
+.SuggestCorrectMarket_title__GtM9f {
+    margin-bottom: 12px
+}
+
+.SuggestCorrectMarket_text__j_Hdr {
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
+    color: #858585;
+    display: grid;
+    grid-gap: 12px;
+    gap: 12px;
+    margin-bottom: 32px
+}
+
+.SuggestCorrectMarket_text__j_Hdr p {
+    margin: 0
+}
+
+@media print,
+screen and (min-width: 900px) {
+    .SuggestCorrectMarket_text__j_Hdr {
+        margin-bottom: 48px
+    }
+}
+
+.SuggestCorrectMarket_actions__GkNyd {
+    display: grid;
+    grid-gap: 16px;
+    gap: 16px
+}
+
+/*# sourceMappingURL=f8cad1ef66ad67bb.css.map*/
